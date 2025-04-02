@@ -1,0 +1,21 @@
+-- Kreiranje baze podataka
+CREATE DATABASE predrag;
+
+-- Korišćenje baze podataka
+USE predrag;
+
+-- Kreiranje tabele roba
+CREATE TABLE roba (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    naziv VARCHAR(255) NOT NULL,
+    cijena Float (10,2) NOT NULL,
+    kolicina INT NOT NULL
+);
+
+-- Ubacivanje podataka u tabelu roba
+INSERT INTO roba (naziv, cijena, kolicina) VALUES
+('Laptop', 1500.00, 5),
+('Telefon', 800.00, 10),
+('Televizor', 1200.50, 3),
+('Frižider', 950.00, 2),
+('Mikrotalasna', 300.00, 7);
